@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-image: url(/photographer.jpg);
+  background-size: cover;
+  min-height: 450px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+}
+main .content {
+  color: white;
+  padding: 30px;
+  width: 45%;
+}
+span {
+  text-decoration: underline;
+}
+button {
+  font-size: 12px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+section .top {
+  padding: 10px;
+}
+section .bottom {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  flex: 3;
+  margin: 10px;
+}
+.right {
+  flex: 1;
+  margin: 10px;
+}
+.right .above {
+  display: flex;
+}
+.right .above div,
+.right .below div {
+  margin: 10px;
+  color: white;
+  background-color: black;
+  padding: 100px;
+}
+
+.right .below {
+  display: flex;
+}
+.side {
+  text-align: center;
+}
+article {
+  background-image: url(/ocean2.jpg);
+  min-height: 450px;
+  background-size: cover;
+}
+article .content1 {
+  float: right;
+  padding: 25px;
+  margin: 10px;
+}
+article h2 {
+  padding: 25px;
+  letter-spacing: 4px;
+}
+footer {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+.one,
+.two {
+  flex: 1;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+@media (max-width: 580px) {
+  main {
+    display: none;
+  }
+  main .content {
+    width: 370px;
+  }
+  section .bottom {
+    display: block;
+  }
+  .bottom .left img {
+    display: none;
+  }
+  .right .above {
+    display: block;
+    text-align: center;
+  }
+  .right .below {
+    display: block;
+    text-align: center;
+  }
+  article {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    background-attachment: fixed;
+  }
+  .content1 {
+    float: right;
+    font-size: 16px;
+  }
+  article h2 {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .two img {
+    height: 500px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 600px) {
+  main {
+    display: none;
+  }
+  section {
+    display: none;
+  }
+  .side {
+    display: none;
+  }
+  article .content1 {
+    position: absolute;
+    top: 1%;
+    left: 30%;
+  }
+  article h2 {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    letter-spacing: 8px;
+    font-size: 30px;
+  }
+  footer {
+    display: block;
+  }
+}

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(211, 209, 207);
+}
+main .image{
+    position: relative;
+}
+main .content{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    width: 40%;
+}
+main .image .para{
+    font-size: 12px;
+}
+span{
+    text-decoration: underline;
+}
+button{
+    font-size: 16px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: aquamarine;
+    color: rgb(28, 105, 221);
+}
+section{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+section .top{
+    text-align: center;
+}
+section .bottom {
+    display: flex;
+
+}
+.bottom .top1 div,
+.bottom .top2 div{
+    background-color: rgb(11, 12, 12);
+    color: aliceblue;
+    padding: 48px;
+    margin: 10px;
+}
+section .right{
+    display: flex;
+    justify-content: center;
+}
+section .left,
+section .right{
+    text-align: center;
+    flex: 1;
+}
+.side{
+    text-align: center;
+}
+article{
+    background-image: url(/Test/photographer.jpg);
+    color: white;
+    padding:  30px ;
+    background-size: cover;
+    height: 400px;
+    width: 1200px;
+    margin: 50px;   
+}
+article .content1 p{
+    font-size: 16px;
+}
+footer{
+    display: flex;
+    margin: 30px;
+    padding: 25px;
+    text-align: center;
+    justify-content: space-between;
+}
+.one{
+    flex: 1;
+}
+.two{
+    flex: 1;
+}
+@media (max-width: 600px){
+    main .content{
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        color: white;
+        width: 40%;
+        font-size: 11px;
+    }
+    main button{
+        font-size: 13px;
+    }
+    section .top{
+        font-size: 16px;
+    }
+    .bottom .left img{
+        display: block ;
+        width: 100%;
+    }
+    section .bottom{
+        display: flex;
+        flex-direction: column;
+    } 
+    section .bottom .left img{
+        text-align: center;
+        margin: 40px;
+    }
+    section .bottom .top1 div{
+       display: flex;
+       flex-direction: column;
+       
+       
+    }
+    article{
+        width: 500px;
+
+    }
+    footer{
+        display: none;
+    }        
+  }
+@media (max-width:900px) and (min-width:600px){
+    header{
+        display: none;
+    }
+
+    main{
+        display: none;
+    }
+    section{
+        display: none;
+    
+    }
+    article{
+        width: 85%;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .one{
+        margin: 20px;
+    }
+    }
+
